@@ -24,5 +24,5 @@ Make sure the server is running using ```mongod``` in another terminal, then imp
 cd mongoexport
 mongoimport --db rating_agency_db --collection reviews --file reviews.json
 mongoimport --db rating_agency_db --collection stores --file stores.json
-mongoimport --db rating_agency_db --collection user --file user.json
+mongoimport --db rating_agency_db --collection users --file user.json
 ```
