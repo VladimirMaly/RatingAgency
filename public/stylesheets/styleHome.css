@@ -8,7 +8,7 @@
 
 body, html {height: 100%}
 .homeImg {
-    min-height: 30%;
+    min-height: 25%;
     /*max-height: 600px;*/
     z-index: -1;
     background-image: url("https://moststylish.files.wordpress.com/2015/03/mens-wear-2012-fashion-business-suit-custom-made-suit-black-three-piece-suit-men-in-suits.jpg");
