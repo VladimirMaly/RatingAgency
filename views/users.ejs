@@ -1,0 +1,54 @@
+<div>
+  <link href="public/stylesheets/forms.css" rel="stylesheet">
+  <div>
+    <h2>User Functionality</h2>
+    <div class="panel">
+      <form>
+        <input ng-model="userId" ng-init="userId = ''" placeholder="user id field"></input>
+        <button ng-click="getUserById()">Get User by Id</button>
+      </form>
+      <form>
+        <input ng-model="deleteUserId" ng-init="deleteUserId = ''" placeholder="user id field"></input>
+        <button ng-click="deleteUserbyId()">Delete User Based on Id</button>
+      </form>
+      <form>
+        <input ng-model="userUsername" ng-init="userUsername = ''" placeholder="username"></input>
+        <button ng-click="getUserByUsername()">Get User by Username</button>
+      </form>
+      <form>
+        <h4>Extra query fields(if all all fields are empty then all are returned):</h4>
+        <input ng-model="getUserFirstname" ng-init="getUserFirstname = ''" placeholder="firstname"></input>
+        <input ng-model="getUserLastname" ng-init="getUserLastname = ''" placeholder="lastname"></input><br>
+        <input ng-model="getUserAge" ng-init="getUserAge = ''" placeholder="age"></input>
+        <input ng-model="getUserSex" ng-init="getUserSex = ''" placeholder="sex"></input>
+        <button ng-click="getUsers()">Get Users</button>
+      </form>
+      <form ng-submit="createUser()">
+        <input ng-model="userCreateId" ng-init="userCreateId = ''" placeholder="id"></input><br>
+        <input ng-model="userCreateUsername" ng-init="userCreateUsername = ''" placeholder="username"></input><br>
+        <input ng-model="userCreateFirstName" ng-init="userCreateFirstName = ''" placeholder="firstname"></input><br>
+        <input ng-model="userCreateLastName" ng-init="userCreateLastName = ''" placeholder="lastname"></input><br>
+        <input ng-model="userCreateSex" ng-init="userCreateSex = ''" placeholder="sex"></input><br>
+        <input ng-model="userCreateAge" ng-init="userCreateAge = ''" placeholder="age"></input><br>
+        <input type="submit" value="Create a new User"><br>
+      </form>
+      <form>
+        <input ng-model="userModifyUsername" ng-init="userModifyUsername = ''" placeholder="username"></input><br>
+        <input ng-model="userModifyFirstName" ng-init="userModifyFirstName = ''" placeholder="firstname"></input><br>
+        <input ng-model="userModifyLastName" ng-init="userModifyLastName = ''" placeholder="lastname"></input><br>
+        <input ng-model="userModifySex" ng-init="userModifySex = ''" placeholder="sex"></input><br>
+        <input ng-model="userModifyAge" ng-init="userModifyAge = ''" placeholder="age"></input><br>
+        <button ng-click="modifyUserbyId()">Modify a User based on Id</button><input ng-model="userModifyId" ng-init="userModifyId = ''" placeholder="user id">
+      </form>
+    </div>
+    <div class="panel">
+      <h2>Display Info:</h2>
+      <textarea name="text1" cols="60" rows="25" ng-model="textArea"
+       ng-init="textArea = 'Currently nothing selected!'"></textarea>
+    </div>
+    <div class="panel">
+      <h2>Formatted Info:</h2>
+      <div id="formattedTextArea1"></div>
+    </div>
+  </div>
+</div>
