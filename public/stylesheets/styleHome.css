@@ -1,0 +1,364 @@
+/* Parallax Effect */
+.homeImg, .homeImg2, .homeImg3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body, html {height: 100%}
+.homeImg {
+    min-height: 30%;
+    /*max-height: 600px;*/
+    z-index: -1;
+    background-image: url("https://moststylish.files.wordpress.com/2015/03/mens-wear-2012-fashion-business-suit-custom-made-suit-black-three-piece-suit-men-in-suits.jpg");
+   /* url('http://collarandcuff.ie/wp-content/uploads/2012/12/Wedding-Suit-close-up-BW-long.jpg');*/
+}
+
+h1 {
+    text-align: center;
+}
+
+.homeImg2 {
+    z-index: -1;
+    background-image: url("https://s-media-cache-ak0.pinimg.com/originals/91/b9/c0/91b9c0ad8b93731c7fe25a96438fbf37.jpg");
+    min-height: 30%;
+}
+
+.homeImg3 {
+    z-index: -1;
+    background-image: url("http://collarandcuff.ie/wp-content/uploads/2012/12/Wedding-Suit-close-up-BW-long.jpg");
+    min-height: 30%;
+}
+
+/* unvisited link */
+a:link {
+    color: rgb(160, 152, 152);
+}
+
+/* visited link */
+a:visited {
+    color: rgb(160, 152, 152);
+}
+
+a:active {
+    color: aliceblue;
+}
+
+.interface {
+    text-align: center;
+}
+
+body {
+    margin: 0px;
+    /*overflow: hidden;*/
+}
+
+/* Note this is for when links('a') is a descendent of li*/
+/* Note if 'a' was a sibling, then we could do 'li:hover + a'*/
+/*#headerMenu > ul > li:hover a {
+    color: aliceblue;
+    -webkit-transition:color 300ms linear;
+    -ms-transition: color 300ms linear;
+    transition: color 300ms linear; 
+}
+
+#headerMenu > ul > li:hover {
+    background-color: #252525;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+#headerMenu {
+    background-color: black;
+}
+
+#headerMenu > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: table;
+    width: 100%;
+}
+
+#headerMenu > ul > li {
+    cursor: pointer;
+    cursor: hand;
+    display: table-cell;
+    text-align: center;
+    height: 27px;
+    padding-top: 7px;
+    transition: background-color 1000ms ease-in-out;
+    -moz-transition: background-color 1000ms ease-in-out;
+    -webkit-transition: background-color 1000ms ease-in-out;
+}
+
+#headerMenu > ul > li > a {
+    text-decoration: none
+}*/
+
+#headerMenu > ul > a:hover {
+    color: aliceblue;
+    -webkit-transition:color 300ms linear;
+    -ms-transition: color 300ms linear;
+    transition: color 300ms linear; 
+}
+
+#headerMenu > ul > a:hover {
+    background-color: #252525;
+    -webkit-transition: background-color 500ms linear;
+    -ms-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+#headerMenu {
+    background-color: black;
+}
+
+#headerMenu > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    display: table;
+    width: 100%;
+}
+
+#headerMenu > ul > a {
+    cursor: pointer;
+    cursor: hand;
+    display: table-cell;
+    text-align: center;
+    height: 27px;
+    padding-top: 7px;
+    transition: background-color 1000ms ease-in-out;
+    -moz-transition: background-color 1000ms ease-in-out;
+    -webkit-transition: background-color 1000ms ease-in-out;
+}
+
+#headerMenu > ul > a {
+    text-decoration: none
+}
+
+/**/
+
+#referTop {
+    text-decoration: none;
+    z-index: 2;
+    right: 0px;
+    top: 0px;
+    position: fixed;
+    padding-right: 48px;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    font-size: larger;
+    background-color: rgba(0, 0, 0, 0.44);
+}
+
+#referTop:hover {
+    color: aliceblue;
+    -webkit-transition:color 500ms linear;
+    -ms-transition: color 500ms linear;
+    transition: color 500ms linear; 
+}
+
+#headerMenuAlt {
+    z-index: 2;
+    left: 0px;
+    top: 0px;
+    width: 22px;
+    padding-right: 48px;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    font-size: larger;
+    color: #9a9b9c;
+    background-color: rgba(0, 0, 0, 0.44);
+    position: relative;
+}
+
+#headerMenuAlt:hover {
+    cursor: pointer;
+    cursor: hand;
+    color: aliceblue;
+    -webkit-transition:color 500ms linear;
+    -ms-transition: color 500ms linear;
+    transition: color 500ms linear; 
+}
+
+.headerSidePanel > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.headerSidePanel > ul > a {
+    background-color: rgba(128, 128, 128, 0.32);
+    padding-right: 48px;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    cursor: hand;
+    text-align: center;
+    transition: background-color 1000ms ease-in-out;
+    -moz-transition: background-color 1000ms ease-in-out;
+    -webkit-transition: background-color 1000ms ease-in-out;
+    text-decoration: none;
+    color: azure;
+    display: block;
+    text-align: left;
+}
+
+.headerSidePanel > ul > a:hover {
+    color: aliceblue;
+    background-color: #252525;
+    -webkit-transition:color 300ms linear, background-color 500ms linear;
+    -ms-transition: color 300ms linear, background-color 500ms linear;
+    transition: color 300ms linear, background-color 500ms linear; 
+}
+
+.headerSidePanel {
+    position: fixed;
+    top: 0px;
+}
+
+.headerMenuAltActive {
+    width: inherit !important;
+    text-align: center;
+    -webkit-transition: width 500ms linear;
+    -ms-transition: width 500ms linear;
+    transition: width 500ms linear;
+}
+
+.displayNone {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    #headerMenu {
+        display: none;
+    }
+
+    .overLayMenu {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .headerMenuAltDropdownSmallScreen {
+        display: none;
+    }
+}
+
+.middle-page-text {
+    font-size: xx-large;
+    color: aliceblue;
+}
+
+.middle-page-text-home {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.middle-page-text-page2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.middle-page-text-page3 {
+    position: absolute;
+    bottom: 50%;
+    font-size: xx-large;
+    color: aliceblue;
+    transform: translate(-50%,-50%);
+}
+
+.info-between-container {
+    width: 100%;
+    height: 513px;
+    background-color: #31333a;
+    overflow: auto;
+}
+
+.info-between-mission-statements-heading {
+    font-size: xx-large;
+    font-family: Verdana,sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0px;
+    background-color: #2b2b2b;
+    color: aliceblue;
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.info-between-mission-statements {
+    font-size: x-large;
+    font-family: Verdana,sans-serif;
+    background-color: #2b2b2b;
+    color: aliceblue;
+    padding-left: 20%;
+}
+
+.info-between-mission-statements > li {
+    list-style-position: inside;
+    list-style-type: circle;
+    padding-bottom: 10px;
+}
+
+#footer {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    font-family: intial;
+}
+
+.footerText {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 15px;
+}
+
+.box-highlight:hover {
+    color: #3f51b5!important;
+    cursor: pointer;
+    cursor: hand;
+}
+
+/*.info-between-mission-statements > li:hover {
+    font
+}*/
+
+.sliding-middle-out {
+    display: inherit;
+    position: relative;
+    padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+    width: 100%;
+    background: aliceblue;
+}
+
+.sliding-middle-out:hover {
+    color: #2242f5;
+    -webkit-transition: color 500ms linear;
+    -ms-transition: color 500ms linear;
+    transition: color 500ms linear;
+}

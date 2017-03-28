@@ -1,0 +1,56 @@
+<div>
+<link href="public/stylesheets/forms.css" rel="stylesheet">
+  <div>
+    <h2>Reviews Functionality</h2>
+    <div class="panel">
+      <form>
+        <input ng-model="reviewId" ng-init="reviewId = ''" placeholder="id field"></input>
+        <button ng-click="getReviewById()">Get Review by Id</button>
+      </form>
+      <form>
+        <input ng-model="reviewStoreID" ng-init="reviewStoreID = ''" placeholder="storeID field"></input>
+        <button ng-click="getReviewByStoreID()">Get Review by storeID</button>
+      </form>
+      <form>
+        <input ng-model="reviewUserID" ng-init="reviewUserID = ''" placeholder="userID field"></input>
+        <button ng-click="getReviewByUserID()">Get Review by userID</button>
+      </form>
+      <form>
+        <input ng-model="deleteReviewIdModel" ng-init="deleteReviewIdModel = ''" placeholder="review id field"></input>
+        <button ng-click="deleteReviewId()">Delete Review Based on Id</button>
+      </form>
+      <form>
+        <input ng-model="deleteReviewStoreNameModel" ng-init="deleteReviewStoreNameModel = ''" placeholder="review storename field"></input>
+        <button ng-click="deleteReviewStoreName()">Delete Review Based on storename</button>
+      </form>
+      <form>
+        <input ng-model="deleteReviewUserIDModel" ng-init="deleteReviewUserIDModel = ''" placeholder="review userID field"></input>
+        <button ng-click="deleteReviewUserID()">Delete Review Based on userID</button>
+      </form>
+      <form ng-submit="createReview()">
+        <input ng-model="reviewCreateId" ng-init="reviewCreateId = ''" placeholder="id"></input><br>
+        <input ng-model="reviewCreateUserID" ng-init="reviewCreateUserID = ''" placeholder="userID"></input><br>
+        <input ng-model="reviewCreateStoreID" ng-init="reviewCreateStoreID = ''" placeholder="storeID"></input><br>
+        <input ng-model="reviewCreateRating" ng-init="reviewCreateRating = ''" placeholder="rating"></input><br>
+        <input ng-model="reviewCreateComment" ng-init="reviewCreateComment = ''" placeholder="comment"></input><br>
+        <input type="submit" value="Create a new review"><br>
+      </form>
+      <form>
+        <input ng-model="reviewModifyStoreID" ng-init="reviewModifyStoreID = ''" placeholder="storeID"></input><br>
+        <input ng-model="reviewModifyUserID" ng-init="reviewModifyUserID = ''" placeholder="userID"></input><br>
+        <input ng-model="reviewModifyRating" ng-init="reviewModifyRating = ''" placeholder="rating"></input><br>
+        <input ng-model="reviewModifyComment" ng-init="reviewModifyComment = ''" placeholder="comment"></input><br>
+        <button ng-click="modifyReviewById()">Modify a review based on Id</button><input ng-model="reviewModifyId" ng-init="reviewModifyId = ''" placeholder="review id">
+      </form>
+    </div>
+    <div class="panel">
+      <h2>Display Info:</h2>
+      <textarea name="text1" cols="60" rows="25" ng-model="textArea"
+      ng-init="textArea = 'Currently nothing selected!'"></textarea>
+    </div>
+    <div class="panel">
+      <h2>Formatted Info:</h2>
+      <div id="formattedTextArea3"></div>
+    </div>
+  </div>
+</div>

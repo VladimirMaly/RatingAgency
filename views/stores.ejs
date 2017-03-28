@@ -1,0 +1,44 @@
+<div>
+  <link href="public/stylesheets/forms.css" rel="stylesheet">
+  <div>
+    <h2>Store Functionality</h2>
+    <div class="panel">
+      <form>
+        <input ng-model="storeId" ng-init="storeId = ''" placeholder="id field"></input>
+        <button ng-click="getStoreById()">Get Store by Id</button>
+      </form>
+      <form>
+        <input ng-model="deleteStoreId" ng-init="deleteStoreId = ''" placeholder="store id field"></input>
+        <button ng-click="deleteStoreById()">Delete Store Based on Id</button>
+      </form>
+      <form>
+        <h4>Extra query fields(if all all fields are empty then all are returned):</h4>
+        <input ng-model="storeCategory" ng-init="storeCategory = ''" placeholder="category"></input>
+        <input ng-model="storeStorename" ng-init="storeStorename = ''" placeholder="storename"></input>
+        <button ng-click="getStores()">Get Stores</button>
+      </form>
+      <form ng-submit="createStore()">
+        <input ng-model="storeCreateId" ng-init="storeCreateId = ''" placeholder="id"></input><br>
+        <input ng-model="storeCreateStorename" ng-init="storeCreateStorename = ''" placeholder="storename"></input><br>
+        <input ng-model="storeCreateCategory" ng-init="storeCreateCategory = ''" placeholder="category"></input><br>
+        <input ng-model="storeCreateAddress" ng-init="storeCreateAddress = ''" placeholder="address"></input><br>
+        <input type="submit" value="Create a new Store"><br>
+      </form>
+      <form>
+        <input ng-model="storeModifyStorename" ng-init="storeModifyStorename = ''" placeholder="storename"></input><br>
+        <input ng-model="storeModifyCategory" ng-init="storeModifyCategory = ''" placeholder="category"></input><br>
+        <input ng-model="storeModifyAddress" ng-init="storeModifyAddress = ''"  placeholder="address"></input><br>
+        <button ng-click="modifyStoreById()">Modify a Store based on Id</button><input ng-model="storeModifyId" ng-init="storeModifyId = ''" placeholder="store id">
+      </form>
+    </div>
+    <div class="panel">
+      <h2>Display Info:</h2>
+      <textarea name="text1" cols="60" rows="25" ng-model="textArea"
+      ng-init="textArea = 'Currently nothing selected!'"></textarea>
+    </div>
+    <div class="panel">
+      <h2>Formatted Info:</h2>
+      <div id="formattedTextArea2"></div>
+    </div>
+  </div>
+</div>
